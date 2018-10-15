@@ -43,7 +43,6 @@ namespace OpenGL_Game.Components
                 objectMatrix *= Matrix4.CreateFromQuaternion(Quaternion.FromEulerAngles(Rotation));
                 objectMatrix *= Matrix4.CreateTranslation(Position);
 
-
                 return objectMatrix;
             }
         }

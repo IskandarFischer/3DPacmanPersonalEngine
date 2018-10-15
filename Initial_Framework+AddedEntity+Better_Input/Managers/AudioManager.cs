@@ -11,21 +11,11 @@ namespace OpenGL_Game.Managers
     {
         AudioContext audioContext;
 
-        Entity audioListener;
-
-        public static Entity GetAudioListener
-        {
-            get { return GetAudioListener; }
-        }
+        public static Entity AudioListener;
 
         public AudioManager()
         {
             audioContext = new AudioContext();
-        }
-
-        public void ChangeAudioListener(Entity newListener)
-        {
-            audioListener = newListener;
         }
 
         public void StopAudioManager()
