@@ -1,0 +1,16 @@
+E:\iski\Documents\FinalYear\Games Architecture\Initial_Framework+AddedEntity+Better_Input\Initial_Framework+AddedEntity+Better_Input\bin\WindowsGL\Debug\Audio\buzz.wav
+E:\iski\Documents\FinalYear\Games Architecture\Initial_Framework+AddedEntity+Better_Input\Initial_Framework+AddedEntity+Better_Input\bin\WindowsGL\Debug\Geometry\SquareGeometry.txt
+E:\iski\Documents\FinalYear\Games Architecture\Initial_Framework+AddedEntity+Better_Input\Initial_Framework+AddedEntity+Better_Input\bin\WindowsGL\Debug\Geometry\TriangleGeometry.txt
+E:\iski\Documents\FinalYear\Games Architecture\Initial_Framework+AddedEntity+Better_Input\Initial_Framework+AddedEntity+Better_Input\bin\WindowsGL\Debug\Textures\spaceship.png
+E:\iski\Documents\FinalYear\Games Architecture\Initial_Framework+AddedEntity+Better_Input\Initial_Framework+AddedEntity+Better_Input\bin\WindowsGL\Debug\Shaders\fs.glsl
+E:\iski\Documents\FinalYear\Games Architecture\Initial_Framework+AddedEntity+Better_Input\Initial_Framework+AddedEntity+Better_Input\bin\WindowsGL\Debug\Shaders\vs.glsl
+E:\iski\Documents\FinalYear\Games Architecture\Initial_Framework+AddedEntity+Better_Input\Initial_Framework+AddedEntity+Better_Input\bin\WindowsGL\Debug\OpenGL_Game.exe
+E:\iski\Documents\FinalYear\Games Architecture\Initial_Framework+AddedEntity+Better_Input\Initial_Framework+AddedEntity+Better_Input\bin\WindowsGL\Debug\OpenGL_Game.pdb
+E:\iski\Documents\FinalYear\Games Architecture\Initial_Framework+AddedEntity+Better_Input\Initial_Framework+AddedEntity+Better_Input\bin\WindowsGL\Debug\OpenTK.dll
+E:\iski\Documents\FinalYear\Games Architecture\Initial_Framework+AddedEntity+Better_Input\Initial_Framework+AddedEntity+Better_Input\bin\WindowsGL\Debug\OpenTK.xml
+E:\iski\Documents\FinalYear\Games Architecture\Initial_Framework+AddedEntity+Better_Input\Initial_Framework+AddedEntity+Better_Input\obj\x86\Debug\OpenGL_Game.csprojAssemblyReference.cache
+E:\iski\Documents\FinalYear\Games Architecture\Initial_Framework+AddedEntity+Better_Input\Initial_Framework+AddedEntity+Better_Input\obj\x86\Debug\OpenGL_Game.csproj.CoreCompileInputs.cache
+E:\iski\Documents\FinalYear\Games Architecture\Initial_Framework+AddedEntity+Better_Input\Initial_Framework+AddedEntity+Better_Input\obj\x86\Debug\OpenGL_Game.csproj.CopyComplete
+E:\iski\Documents\FinalYear\Games Architecture\Initial_Framework+AddedEntity+Better_Input\Initial_Framework+AddedEntity+Better_Input\obj\x86\Debug\OpenGL_Game.exe
+E:\iski\Documents\FinalYear\Games Architecture\Initial_Framework+AddedEntity+Better_Input\Initial_Framework+AddedEntity+Better_Input\obj\x86\Debug\OpenGL_Game.pdb
+E:\iski\Documents\FinalYear\Games Architecture\Initial_Framework+AddedEntity+Better_Input\Initial_Framework+AddedEntity+Better_Input\bin\WindowsGL\Debug\Audio\alienspaceship.wav
