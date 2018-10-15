@@ -17,28 +17,31 @@ namespace OpenGL_Game.Objects
         public Entity(string name)
         {
             this.name = name;
-            InstantiateEntity(Vector3.Zero, Quaternion.Identity, Vector3.One);
+            InstantiateEntity(Vector3.Zero, Vector3.Zero, Vector3.One);
         }
 
         public Entity(string name, Vector3 position)
         {
             this.name = name;
-            InstantiateEntity(position, Quaternion.Identity, Vector3.One);
+            InstantiateEntity(position, Vector3.Zero, Vector3.One);
         }
 
-        public Entity(string name, Vector3 position, Quaternion rotation)
+        public Entity(string name, Vector3 position, Vector3 rotation)
         {
             this.name = name;
             InstantiateEntity(position, rotation, Vector3.One);
         }
 
-        public Entity(string name, Vector3 position, Quaternion rotation, Vector3 scale)
+        public Entity(string name, Vector3 position, Vector3 rotation, Vector3 scale)
         {
             this.name = name;
             InstantiateEntity(position, rotation, scale);
         }
 
-        protected virtual void InstantiateEntity(Vector3 position, Quaternion rotation, Vector3 scale) { }
+        protected virtual void InstantiateEntity(Vector3 position, Vector3 rotation, Vector3 scale)
+        {
+            AddComponent(new ComponentTransform(position, rotation, scale));
+        }
 
         /// <summary>Adds a single component</summary>
         public void AddComponent(IComponent component)
@@ -72,6 +75,14 @@ namespace OpenGL_Game.Objects
         public List<IComponent> Components
         {
             get { return componentList; }
+        }
+
+        public ComponentTransform Transform
+        {
+            get
+            {
+                return (ComponentTransform)GetComponent(ComponentTypes.COMPONENT_TRANSFORM);
+            }
         }
     }
 }

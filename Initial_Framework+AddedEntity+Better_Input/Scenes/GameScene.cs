@@ -50,7 +50,7 @@ namespace OpenGL_Game.Scenes
             Entity newEntity;
 
             newEntity = new Entity("Triangle1");
-            newEntity.AddComponent(new ComponentPosition(-1.0f, 0.0f, -3.0f));
+            newEntity.Transform.Position = new Vector3(-1.0f, 0.0f, -3.0f);
             newEntity.AddComponent(new ComponentGeometry("Geometry/TriangleGeometry.txt"));
             newEntity.AddComponent(new ComponentTexture("Textures/spaceship.png"));
             newEntity.AddComponent(new ComponentVelocity(Vector3.Zero));
@@ -58,21 +58,24 @@ namespace OpenGL_Game.Scenes
             entityManager.AddEntity(newEntity);
 
             newEntity = new Entity("Square1");
-            newEntity.AddComponent(new ComponentPosition(+1.0f, 0.0f, -3.0f));
+            newEntity.Transform.Position = new Vector3(1.0f, 0.0f, -3.0f);
             newEntity.AddComponent(new ComponentGeometry("Geometry/SquareGeometry.txt"));
             newEntity.AddComponent(new ComponentTexture("Textures/spaceship.png"));
             newEntity.AddComponent(new ComponentVelocity(Vector3.Zero));
             entityManager.AddEntity(newEntity);
 
             newEntity = new Entity("Triangle2");
-            newEntity.AddComponent(new ComponentPosition(+3.0f, 0.0f, -3.0f));
+
+            newEntity.Transform.Position = new Vector3(3.0f, 0.0f, -3.0f);
+            //newEntity.Transform.Rotation = new Vector3(0, 45, 0);
+
             newEntity.AddComponent(new ComponentGeometry("Geometry/TriangleGeometry.txt"));
             newEntity.AddComponent(new ComponentTexture("Textures/spaceship.png"));
             newEntity.AddComponent(new ComponentVelocity(Vector3.Zero));
             entityManager.AddEntity(newEntity);
 
             newEntity = new Entity("Square2");
-            newEntity.AddComponent(new ComponentPosition(-3.0f, 0.0f, -3.0f));
+            newEntity.Transform.Position = new Vector3(-3.0f, 0.0f, -3.0f);
             newEntity.AddComponent(new ComponentGeometry("Geometry/SquareGeometry.txt"));
             newEntity.AddComponent(new ComponentTexture("Textures/spaceship.png"));
             newEntity.AddComponent(new ComponentVelocity(new Vector3(0,1,1)));

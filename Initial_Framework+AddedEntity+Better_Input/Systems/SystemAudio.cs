@@ -12,7 +12,7 @@ namespace OpenGL_Game.Systems
 {
     class SystemAudio : ISystem
     {
-        const ComponentTypes MASK = (ComponentTypes.COMPONENT_POSITION | ComponentTypes.COMPONENT_AUDIO);
+        const ComponentTypes MASK = (ComponentTypes.COMPONENT_TRANSFORM | ComponentTypes.COMPONENT_AUDIO);
 
         public string Name
         {
@@ -27,7 +27,7 @@ namespace OpenGL_Game.Systems
             var allComponents = entity.Components;
 
             ComponentAudio audio = (ComponentAudio)entity.GetComponent(ComponentTypes.COMPONENT_AUDIO);
-            ComponentPosition position = (ComponentPosition)entity.GetComponent(ComponentTypes.COMPONENT_POSITION);
+            ComponentTransform position = (ComponentTransform)entity.GetComponent(ComponentTypes.COMPONENT_TRANSFORM);
 
             audio.UpdatePosition(position.Position, new Vector3(0, 0, 33), new Vector3(0,0,-1), Vector3.UnitY);
         }

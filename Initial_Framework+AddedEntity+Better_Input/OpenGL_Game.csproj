@@ -59,7 +59,6 @@
     <Compile Include="Components\ComponentAudio.cs" />
     <Compile Include="Components\ComponentGeometry.cs" />
     <Compile Include="Components\ComponentTexture.cs" />
-    <Compile Include="Components\ComponentPosition.cs" />
     <Compile Include="Components\ComponentTransform.cs" />
     <Compile Include="Components\ComponentVelocity.cs" />
     <Compile Include="Managers\AudioManager.cs" />

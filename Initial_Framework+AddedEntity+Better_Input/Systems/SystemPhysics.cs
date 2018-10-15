@@ -11,7 +11,7 @@ namespace OpenGL_Game.Systems
 {
     class SystemPhysics : ISystem
     {
-        const ComponentTypes MASK = (ComponentTypes.COMPONENT_POSITION | ComponentTypes.COMPONENT_VELOCITY);
+        const ComponentTypes MASK = (ComponentTypes.COMPONENT_TRANSFORM | ComponentTypes.COMPONENT_VELOCITY);
 
         public string Name
         {
@@ -25,13 +25,13 @@ namespace OpenGL_Game.Systems
 
             var allComponents = entity.Components;
 
-            ComponentPosition pos = (ComponentPosition)entity.GetComponent(ComponentTypes.COMPONENT_POSITION);
+            ComponentTransform pos = (ComponentTransform)entity.GetComponent(ComponentTypes.COMPONENT_TRANSFORM);
             ComponentVelocity vel = (ComponentVelocity)entity.GetComponent(ComponentTypes.COMPONENT_VELOCITY);
 
             Motion(pos, vel);
         }
 
-        public void Motion(ComponentPosition pos, ComponentVelocity vel)
+        public void Motion(ComponentTransform pos, ComponentVelocity vel)
         {
             Vector3 currentPos = pos.Position;
             Vector3 velocity = vel.Velocity;
