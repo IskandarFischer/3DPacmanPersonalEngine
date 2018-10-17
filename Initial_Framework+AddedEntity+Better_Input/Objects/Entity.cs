@@ -13,7 +13,11 @@ namespace OpenGL_Game.Objects
         string name;
         List<IComponent> componentList = new List<IComponent>();
         ComponentTypes mask;
- 
+
+        List<ComponentBase> componentLL = new List<ComponentBase>();
+
+        private ComponentTransform transform;
+
         public Entity(string name)
         {
             this.name = name;
@@ -38,9 +42,18 @@ namespace OpenGL_Game.Objects
             InstantiateEntity(position, rotation, scale);
         }
 
-        protected virtual void InstantiateEntity(Vector3 position, Vector3 rotation, Vector3 scale)
+        private void InstantiateEntity(Vector3 position, Vector3 rotation, Vector3 scale)
         {
             AddComponent(new ComponentTransform(position, rotation, scale));
+        }
+
+        public void AddComponent(ComponentBase component)
+        {
+            Debug.Assert(component != null, "Component cannot be null");
+
+            component.Entity = this;
+            componentLL.Add(component);
+            mask |= component.ComponentType;
         }
 
         /// <summary>Adds a single component</summary>
@@ -62,6 +75,17 @@ namespace OpenGL_Game.Objects
             return foundComponent;
         }
 
+        public T GetComponent<T>()
+        {
+            foreach (ComponentBase item in componentLL)
+            {
+                if (item.GetType() == typeof(T))
+                    return (T)Convert.ChangeType(item, typeof(T));
+            }
+
+            return default(T);
+        }
+
         public String Name
         {
             get { return name; }
@@ -81,7 +105,10 @@ namespace OpenGL_Game.Objects
         {
             get
             {
-                return (ComponentTransform)GetComponent(ComponentTypes.COMPONENT_TRANSFORM);
+                if (transform == null)
+                    transform = (ComponentTransform)GetComponent(ComponentTypes.COMPONENT_TRANSFORM);
+
+                return transform;
             }
         }
     }

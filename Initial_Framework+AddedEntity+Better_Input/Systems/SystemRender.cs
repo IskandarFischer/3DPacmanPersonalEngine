@@ -75,7 +75,7 @@ namespace OpenGL_Game.Systems
                 {
                     return component.ComponentType == ComponentTypes.COMPONENT_TRANSFORM;
                 });
-                Vector3 position = ((ComponentTransform)positionComponent).Position;
+
                 Matrix4 world = entity.Transform.ObjectTransform;
 
                 IComponent textureComponent = components.Find(delegate(IComponent component)

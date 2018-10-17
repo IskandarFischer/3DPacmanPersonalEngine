@@ -54,7 +54,7 @@ namespace OpenGL_Game.Scenes
             newEntity.AddComponent(new ComponentGeometry("Geometry/TriangleGeometry.txt"));
             newEntity.AddComponent(new ComponentTexture("Textures/spaceship.png"));
             newEntity.AddComponent(new ComponentVelocity(Vector3.Zero));
-            newEntity.AddComponent(new ComponentAudio("Audio/buzz.wav", true, new Vector3(-1.0f, 0.0f, -3.0f)));
+        //    newEntity.AddComponent(new ComponentAudio("Audio/buzz.wav", true, new Vector3(-1.0f, 0.0f, -3.0f)));
             entityManager.AddEntity(newEntity);
 
             newEntity = new Entity("Square1");
