@@ -64,8 +64,6 @@
     <Compile Include="Components\ComponentTexture.cs" />
     <Compile Include="Components\ComponentTransform.cs" />
     <Compile Include="Components\ComponentVelocity.cs" />
-    <Compile Include="Components\Test.cs" />
-    <Compile Include="Components\Test2.cs" />
     <Compile Include="Managers\AudioManager.cs" />
     <Compile Include="Managers\CollisionManager.cs" />
     <Compile Include="Managers\SceneManager.cs" />

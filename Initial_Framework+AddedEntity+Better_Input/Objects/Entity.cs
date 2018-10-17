@@ -51,7 +51,6 @@ namespace OpenGL_Game.Objects
         {
             Debug.Assert(component != null, "Component cannot be null");
 
-            component.Entity = this;
             componentLL.Add(component);
             mask |= component.ComponentType;
         }

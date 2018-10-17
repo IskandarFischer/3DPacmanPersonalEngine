@@ -12,20 +12,5 @@ namespace OpenGL_Game.Components
         {
             get;
         }
-
-        private ComponentTransform transform;
-
-        public ComponentTransform Transform
-        {
-            get
-            {
-                if (transform == null)
-                    transform = (ComponentTransform)Entity.GetComponent(ComponentTypes.COMPONENT_TRANSFORM);
-
-                return transform;
-            }
-        }
-
-        public Entity Entity;
     }
 }
