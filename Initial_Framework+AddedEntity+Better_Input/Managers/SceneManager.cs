@@ -16,6 +16,7 @@ namespace OpenGL_Game.Managers
 
         public SceneManager() : base(width, height, new OpenTK.Graphics.GraphicsMode(new OpenTK.Graphics.ColorFormat(8, 8, 8, 8), 32))
         {
+
         }
 
         protected override void OnLoad(EventArgs e)
