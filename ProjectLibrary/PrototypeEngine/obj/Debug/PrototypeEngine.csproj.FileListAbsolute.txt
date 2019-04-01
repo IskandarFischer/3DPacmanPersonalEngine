@@ -1,0 +1,9 @@
+c:\users\iski\source\repos\ProjectLibrary\PrototypeEngine\bin\Debug\PrototypeEngine.dll
+c:\users\iski\source\repos\ProjectLibrary\PrototypeEngine\bin\Debug\PrototypeEngine.pdb
+c:\users\iski\source\repos\ProjectLibrary\PrototypeEngine\bin\Debug\OpenTK.dll
+c:\users\iski\source\repos\ProjectLibrary\PrototypeEngine\bin\Debug\OpenTK.xml
+c:\users\iski\source\repos\ProjectLibrary\PrototypeEngine\obj\Debug\PrototypeEngine.csprojAssemblyReference.cache
+c:\users\iski\source\repos\ProjectLibrary\PrototypeEngine\obj\Debug\PrototypeEngine.csproj.CoreCompileInputs.cache
+c:\users\iski\source\repos\ProjectLibrary\PrototypeEngine\obj\Debug\PrototypeEngine.csproj.CopyComplete
+c:\users\iski\source\repos\ProjectLibrary\PrototypeEngine\obj\Debug\PrototypeEngine.dll
+c:\users\iski\source\repos\ProjectLibrary\PrototypeEngine\obj\Debug\PrototypeEngine.pdb
